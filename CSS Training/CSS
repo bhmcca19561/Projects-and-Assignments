@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>CSS Examples</title>	
+        <style>
+            p {
+                color:darkviolet;
+            }
+        </style>
+    </head> 
+    
+    <body>
+        <p>This is a paragraph.</p>
+        <p>This is a second paragraph.</p>
+    </body> 
+</html>

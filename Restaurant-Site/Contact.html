@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<!--
+    Name: Brian McCauley
+    Date Created: 07/14/2019
+    Most recent revision: 07/14/2019
+-->
+<html lang="en"> 
+    <head> 
+        <title>Contacts</title>
+		<link href="Styles/CStyle.css" rel="stylesheet" type="text/css" />
+    </head> 
+    
+    <body><center>
+        <header>
+            <h1>Contact Information</h1>
+			<hr/>
+        </header>
+
+        <nav>
+		<a href="Index.html ">Home</a>
+		<a href="Menu.html ">Menu</a>
+		<a href="Contact.html">Contact Us</a>
+        </nav>
+		<hr/>
+		<h2>Information Request</h2>
+		<form action="submit.html" method="POST">
+			<label for="firstName"">Name:</label><br />
+				<Input type="text" id="firstName" name="firstName"><br />
+			<label for="lastName">Email:</label><br />
+				<Input type="text" id="lastName" name="lastName"><br />
+			<label for="phone">Phone Number:</label><br />
+				<Input type="text" id="phone" name="phone"><br />
+			<label for="contact">Reason for Inquiry:</label><br />
+				<select id="contact" name="contact">
+					<option value="default" selected>--Select One--</option>
+					<option value="morning">Catering</option>
+					<option value="afternoon">Party at Resturaunt</option>
+					<option value="evening">Carry Out</option>
+					<option value="evening">Pick Up</option>
+				</select>
+			<fieldset>
+				<legend>Have you been to the resturaunt before?:</legend><br />
+					<input type="radio" id="choice1" name="questionnaire" value="yes">
+					<label for="choice1">Yes</label><br />
+					<input type="radio" id="choice2" name="questionnaire" value="no">
+					<label for="choice2">No</label><br />
+			</fieldset>
+			<fieldset>
+				<legend>Best days to contact you:</legend><br />
+					<input type="checkbox" id="Monday" name="interest" value="Monday"> 
+					<label for="FrontEnd">M</label>
+					<input type="checkbox" id="Tuesday" name="interest" value="Tuesday"> 
+					<label for="BackEnd">T</label>
+					<input type="checkbox" id="Wendesday" name="interest" value="Wendesday">
+					<label for="Database">W</label>
+					<input type="checkbox" id="Thursday" name="interest" value="Thursday">
+					<label for="Database">Th</label>
+					<input type="checkbox" id="Friday" name="interest" value="Friday">
+					<label for="Database">F</label>
+			</fieldset>
+			<label for="info">Additional Information</label><br />
+				<textarea id="info" name="info"></textarea>
+				<input type="submit" name="submit" value="Submit">
+	</form>
+	<hr/>
+        <footer>
+			<p><center>162 Valk Street, Dover, Delaware, 19955</p>
+			</p>755-855-6688</p>
+        </footer>
+    </center></body>
+</html

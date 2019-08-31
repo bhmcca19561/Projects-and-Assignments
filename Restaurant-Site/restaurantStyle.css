@@ -1,0 +1,34 @@
+<style>
+label, fieldset {
+
+}	
+
+header, footer {
+    text-align: center;
+	background-color: #80b3ff;
+	padding: 10px 10px 10px 10px;
+}
+
+	.pill-nav a {
+	display: inline-block;
+	background-color: #80b3ff;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	font-size: 17px;
+	border-radius: 5px;
+	margin:5px;
+	}
+
+body {
+	background-color: #ffccb3;
+	color: red;
+}
+
+h1 {
+	color: red;
+	font-weight:bold;
+	font-size: 400%;
+	font-family:cursive;
+}
+<style>

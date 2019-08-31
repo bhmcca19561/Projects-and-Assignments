@@ -8,28 +8,101 @@
 
 <html lang="en">
 <header>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 <title>DeZelli's Dine and Drive - Home</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<style>
+	p.desc {
+		text-align: justify;
+		width: 400px;
+	}
+	
+	nav {
+		text-align: left;
+		background-color: white;
+		padding: 10px 10px 10px 10px;
+	}
+	
+	.pill-nav a {
+	display: inline-block;
+	background-color: #80b3ff;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	font-size: 17px;
+	border-radius: 5px;
+	margin:5px;
+	}
+	
+	nav a{
+		text-decoration: none;
+		color: red;
+	}
+
+	nav a:hover {
+		color: #5b7d87;
+		font-weight: bold;	
+	}
+
+	nav a:visited {
+		color: #734d26; 
+	}
+</style>
+	<link rel="stylesheet" 
+      type="text/css"
+      href="restaurantStyle.css" />
 </header>
 <body>
-<section>
-	<h1><center>Dezelli's Dine and Drive</center></h1>
-	<p><center>"Enjoy your authentic Italian food inside or in the car!"</center><p>
+	<header>
+	<h1 style="color: red;font-weight:bold;font-size: 400%;font-family:cursive;"><center>Dezelli's Dine and Drive</center></h1>
+	</header>
 	<hr/>
-		<nav>
-		<p><a href="Index.html ">Home</a>
-			<a href="Menu.html ">Menu</a>
-			<a href="Contact.html">Contact Us</a></p>
-		</nav>
-		<hr/>
+	<div class="pill-nav">
+	<nav>
+		<a class="active" href="Index.html "><img src="images/home.svg" alt="Home"</a>
+		<a href="Menu.html ">Menu</a>
+		<a href="Contact.html">Contact Us</a>
+	</nav>
+	</div>
+	<hr/>
 	<article id="Image">
-		<a href="Contact.html"><center><img src="images/res.jpg" alt="Get in touch with us, and get your food fast!"
+		<a href="Contact.html"><center><img src="images/din.jpg" alt="Get in touch with us, and get your food fast!"
 			style="width: 400px; height: 150px;"</center></a>
-	<p><center>Here at DeZelli's we try and make sure you have a great experience that will stick with you whenever you hear our resturaunt's name. We offer many kinds of unique Italian food that the whole family can enjoy. After you've had a good meal we invite you to try our desserts that will leave you wondering how our chefs could make something so delicious. Feel free to leave your information in the contacts link so that we can plan any kind of catering you may want done. We hope that you enjoy the wonderous food here at DeZelli's!</p>
+	<p class="desc"> Here at Dezelli's we provide you the best quality breakfast imaginable, with the best atmosphere that you can get here in Delaware. Whether you're here for a nice cup of joe or a nice breakfast with the family Dezelli's always have something to offer! We reccomend to try the Yumlette, which is an omelett that sends your tastebuds on a trip that will leave you smiling for the whole car ride home. We hope that you remember us on your way to AND back from your destination and know that we'll always be ready to serve you with a smile!</p>
 	</article>
-<footer>
+	
+	<div class="container">
+	
+		<div id="resCarousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="images/Om.jpg" alt="First Slide">
+					<h2>We're rolling out our seasonal menu, with special options for this season.</h2>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="Images/res.jpg" alt="Second Slide">
+						<h2>We're opeing a new location!</h2>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="Images/pan.jpg" alt="Third Slide">						
+					</div>
+			</div>
+		</div>
+	</div>
 	<hr/>
-	<p><center>162 Valk Street, Dover, Delaware, 19955</p>
-	</p>755-855-6688</center></p>
+<footer id="Foot">
+	<p>162 Valk Street, Dover, Delaware, 19955</p>
+	</p>755-855-6688</p>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
 </html>

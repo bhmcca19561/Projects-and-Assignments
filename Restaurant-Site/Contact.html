@@ -6,37 +6,104 @@
 -->
 <html lang="en"> 
     <head> 
-        <title>Contacts</title>
-		<link href="Styles/CStyle.css" rel="stylesheet" type="text/css" />
+	
+	<meta charset="utf=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/jquery.validate.min.js"></script>
+	
+	        <script>
+            $(document).ready(function(){
+
+             $('#contact-form').validate(
+             {
+              rules: {
+                Name: {
+                  minlength: 2,
+                  required: true
+                },
+                Email: {
+                  required: true,
+                  email: true
+                },
+                phone: {
+                  minlength: 2,
+                  required: true
+                }
+                contact: {
+                  minlength: 2,
+                  required: true
+                }
+              },
+              highlight: function(element) {
+                $(element).closest('.control-group').removeClass('success').addClass('error');
+              },
+              success: function(element) {
+                element
+                .text('OK!').addClass('valid')
+                .closest('.control-group').removeClass('error').addClass('success');
+              }
+             });
+            });
+        </script>
+	
+        <title>Contact Us</title>
+	<style>
+		label {
+			font-weight: bold;
+		}
+	
+	nav {
+		text-align: left;
+		background-color: white;
+		padding: 10px 10px 10px 10px;
+	}
+	
+	nav a{
+		text-decoration: none;
+		color: red;
+	}
+
+	nav a:hover {
+		color: #5b7d87;
+		font-weight: bold;	
+	}
+
+	nav a:visited {
+		color: #734d26; 
+	}
+	</style>
+	<link rel="stylesheet" 
+      type="text/css"
+      href="restaurantStyle.css" />
     </head> 
     
-    <body><center>
+    <body>
         <header>
-            <h1>Contact Information</h1>
-			<hr/>
-        </header>
-
-        <nav>
-		<a href="Index.html ">Home</a>
+            <h1>Dezelli's Dine and Drive</h1>
+		</header>
+	<hr/>
+	<div class="pill-nav">
+	<nav>
+		<a class="active" href="Index.html "><img src="images/home.svg" alt="Home"</a>
 		<a href="Menu.html ">Menu</a>
 		<a href="Contact.html">Contact Us</a>
-        </nav>
+	</nav>
+	</div>
 		<hr/>
-		<h2>Information Request</h2>
-		<form action="submit.html" method="POST">
-			<label for="firstName"">Name:</label><br />
-				<Input type="text" id="firstName" name="firstName"><br />
-			<label for="lastName">Email:</label><br />
-				<Input type="text" id="lastName" name="lastName"><br />
+		
+		<form action="submit.html" method="POST"><center>
+			<label for="Name">Name:</label><br />
+				<Input type="text" id="Name" name="Name"><br />
+			<label for="Email">Email:</label><br />
+				<Input type="text" id="Email" name="Email"><br />
 			<label for="phone">Phone Number:</label><br />
 				<Input type="text" id="phone" name="phone"><br />
 			<label for="contact">Reason for Inquiry:</label><br />
 				<select id="contact" name="contact">
-					<option value="default" selected>--Select One--</option>
-					<option value="morning">Catering</option>
-					<option value="afternoon">Party at Resturaunt</option>
-					<option value="evening">Carry Out</option>
-					<option value="evening">Pick Up</option>
+					<option value="default" selected>Catering</option>
+					<option value="pParty">Private Party</option>
+					<option value="fBack">Feedback</option>
+					<option value="Other">Other</option>
 				</select>
 			<fieldset>
 				<legend>Have you been to the resturaunt before?:</legend><br />
@@ -58,14 +125,23 @@
 					<input type="checkbox" id="Friday" name="interest" value="Friday">
 					<label for="Database">F</label>
 			</fieldset>
-			<label for="info">Additional Information</label><br />
-				<textarea id="info" name="info"></textarea>
-				<input type="submit" name="submit" value="Submit">
 	</form>
+	
+	    <div class="control-group">
+        <label class="control-label" for="message">Additional Information</label>
+        <div class="controls">
+            <textarea name="message" id="message" rows="8" class="span5" placeholder="Please provide any additional details"></textarea>
+        </div>
+    </div>
+    <div class="form-actions">
+        <input type="hidden" name="save" value="contact">
+        <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+	
 	<hr/>
-        <footer>
-			<p><center>162 Valk Street, Dover, Delaware, 19955</p>
+        <footer id="Foot">
+			<p>162 Valk Street, Dover, Delaware, 19955</p>
 			</p>755-855-6688</p>
         </footer>
-    </center></body>
-</html
+ </body>
+</html>
